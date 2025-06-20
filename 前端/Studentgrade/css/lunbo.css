@@ -1,0 +1,48 @@
+/* 轮播图容器样式 */
+.slider {
+    width: 50%; 
+    height: auto;
+    margin: 20px auto;
+    position: fixed;
+    top: 100px; /* 调整到顶部div下方 */
+    z-index: 1;
+    overflow: hidden;
+}
+
+/* 图片容器样式 */
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* 图片样式 */
+.slide {
+    min-width: 100%;
+    height: auto;
+    /* object-fit: contain;  */
+}
+
+/* 小圆点容器样式 */
+.dots {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* 小圆点样式 */
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+/* 激活状态的小圆点样式 */
+.dot.active {
+    background-color: #ffffff00;
+}
